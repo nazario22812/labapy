@@ -8,4 +8,5 @@ for i in range(n):
 
 
 list.sort()
-print(list[0,1])
+list.reverse()
+print(f"1.{list[0]}\n2.{list[1]}")
