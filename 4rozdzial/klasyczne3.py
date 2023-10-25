@@ -1,5 +1,14 @@
 list = []
 
+
+def parz(array):
+    n = len(list)
+    for i in range(n // 2):
+        if list[i] != list[n - i - 1]:        
+            return False
+    return True
+
+
 # list1 = []
 # list2 = [] 
 count = 0
@@ -19,8 +28,11 @@ if count % 2 == 0:
 else:
     print(f"ilosc nieparzysta: {count}")
 
-for i in range(count):
-    pass    
+if parz(list):
+    print("Tablica jest symetryczna")
+else:
+    print("Tablica nie jest symetryczna")
+
     
     
 # print(f"{list[:int(count1)]}\n{list[int(count1):]}")
