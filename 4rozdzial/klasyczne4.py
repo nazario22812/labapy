@@ -1,7 +1,5 @@
 list = []
 
-count = 0
-
 while True:
     n = int(input("> "))
     if n == 0:
@@ -9,8 +7,7 @@ while True:
     else:
         list.append(n)
 
-for i in list:
-    gl = list.count(i)
-    count += gl
+count = {value for value in list if list.count(value) > 2 }
 
 print(count)
+
