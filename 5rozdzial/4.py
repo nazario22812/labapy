@@ -9,6 +9,7 @@ while True:
     n = int(input("> "))
     if n==0:
         break
+    lst.append(n)
 
 
 for i in lst:
@@ -18,7 +19,7 @@ for i in lst:
         niepar.append(i)
 
 
-sorted[parzyste,niepar]
+sorted = parzyste + niepar
 print(sorted)
 # for i in parzyste:
 #     count1 +=1
